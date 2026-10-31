@@ -1,0 +1,188 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><base href="/zenith/"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Finest Media · Dubai</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: four-part editorial portfolio — cinematic hero, network, selected work, founder. Single dark theme on purpose. */
+:root{--bg:#0b0b0a;--bg2:#141311;--ink:#f2eee4;--ink2:#cfc9bc;--ink3:#97917f;--line:rgba(242,238,228,.12);--gold:#c9b48a;
+--serif:"EB Garamond",Georgia,"Times New Roman",serif;--sans:Inter,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--sans);margin:0;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img,video{max-width:100%}
+a{color:inherit}a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.w{max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.ey{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink3);font-weight:600}
+h1,h2{font-family:var(--serif);font-weight:400;margin:0;text-wrap:balance}
+h1 em,h2 em{font-style:italic}
+section{padding-block:80px}
+section h2{font-size:clamp(34px,4.6vw,56px);line-height:1.04;margin-top:14px}
+
+/* 1 hero */
+.hero{position:relative;min-height:92svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero>img,.hero>video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,10,.45),rgba(11,11,10,0) 28%,rgba(11,11,10,.5) 64%,#0b0b0a)}
+.hi{position:relative;z-index:1;width:100%;padding-block:40px 56px}
+.brand{font:600 12px/1 var(--sans);letter-spacing:.32em;text-transform:uppercase;color:#fff}
+.when{margin-top:10px;font-size:13px;letter-spacing:.06em;color:rgba(255,255,255,.75)}
+.hero h1{font-size:clamp(56px,10vw,128px);line-height:.95;margin-top:26px;letter-spacing:-.015em}
+.hero p{max-width:470px;color:var(--ink2);font-size:clamp(16px,1.4vw,18px);margin:18px 0 0}
+.cta{display:inline-flex;align-items:center;gap:8px;margin-top:26px;background:var(--ink);color:var(--bg);text-decoration:none;border-radius:999px;padding:13px 20px;font:600 14px var(--sans);transition:opacity .2s}
+.cta:hover{opacity:.88}.cta span{opacity:.55}
+.cta.g{background:transparent;color:var(--ink);border:1px solid var(--line)}
+
+/* 2 network */
+.big{font:600 clamp(84px,15vw,184px)/.9 var(--sans);letter-spacing:-.055em;margin-top:18px}
+.big small{font-size:.42em;letter-spacing:-.03em;vertical-align:.95em;margin-left:.04em}
+.bigl{font-family:var(--serif);font-size:clamp(22px,2.4vw,28px);color:var(--ink2);margin-top:12px}
+.accs{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:40px}
+.accs a{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;padding:22px 10px 18px;border:1px solid var(--line);border-radius:16px;background:var(--bg2);text-decoration:none;transition:border-color .25s,transform .25s}
+.accs a:hover{border-color:rgba(242,238,228,.35);transform:translateY(-2px)}
+.accs img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:1px solid var(--line)}
+.accs b{font-weight:600;font-size:14px;display:flex;align-items:center;gap:4px}
+.accs b svg{width:14px;height:14px;flex:none}
+.accs span{font-size:13px;color:var(--ink3);margin-top:-8px}
+.proof{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:44px}
+.proof figure{margin:0}
+.proof img{width:100%;aspect-ratio:9/16;object-fit:cover;object-position:top;border-radius:12px;display:block;border:1px solid var(--line)}
+.proof figcaption{margin-top:10px;font-size:12.5px;color:var(--ink3)}
+.worked{margin-top:34px;font-size:13px;color:var(--ink3)}.worked b{color:var(--ink2);font:italic 400 18px var(--serif);margin:0 10px}
+
+/* 3 work */
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:40px}
+.work a{position:relative;display:block;aspect-ratio:9/16;border-radius:14px;overflow:hidden;background:var(--bg2);text-decoration:none}
+.work video{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s ease}
+.work a:hover video{transform:scale(1.025)}
+.work .cap{position:absolute;left:0;right:0;bottom:0;padding:48px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.72));display:flex;justify-content:space-between;align-items:baseline;gap:10px;color:#fff}
+.work .cap b{font:italic 400 22px var(--serif)}.work .cap span{font-size:12px;color:rgba(255,255,255,.75)}
+.stmt{font-family:var(--serif);font-size:clamp(24px,2.8vw,34px);line-height:1.25;max-width:24ch;margin:56px auto 0;text-align:center;color:var(--ink2)}
+
+.vis{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:36px}
+.vis .ph{border-radius:20px;padding:5px;background:#000;border:1px solid var(--line)}
+.vis video{width:100%;aspect-ratio:9/16;object-fit:contain;border-radius:15px;display:block;background:#000}
+@media (max-width:900px){.vis{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin-left:-20px;margin-right:-20px;padding:0 20px 4px;scroll-padding:0 20px;scrollbar-width:none}.vis::-webkit-scrollbar{display:none}.vis .ph{flex:0 0 44%;scroll-snap-align:start}}
+@media (max-width:560px){.vis .ph{flex-basis:62%}}
+/* 4 founder */
+.fd{display:flex;align-items:center;gap:22px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:48px}
+.fd>img{width:92px;height:92px;border-radius:50%;object-fit:cover;object-position:50% 25%;border:1px solid var(--line);flex:none}
+.fd .nm{font:600 24px/1.1 var(--sans);letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
+.fd .nm svg{width:20px;height:20px}
+.fd p{margin:6px 0 0;color:var(--ink2);font-size:15px;max-width:46ch}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.links .cta{margin-top:0}
+footer{padding-block:34px;color:var(--ink3);font-size:12.5px;border-top:1px solid var(--line);margin-top:56px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(14px);transition:opacity .9s ease,transform .9s ease}.rv.in{opacity:1;transform:none}
+
+@media (max-width:900px){.accs{grid-template-columns:repeat(5,minmax(132px,1fr));overflow-x:auto;scroll-snap-type:x mandatory;margin-left:-20px;margin-right:-20px;padding:0 20px 4px;scroll-padding:0 20px;scrollbar-width:none}.accs a{scroll-snap-align:start}}
+@media (max-width:760px){
+section{padding-block:56px}
+.hero{min-height:86svh}.hi{padding-block:28px 40px}
+.proof,.work{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin-left:-20px;margin-right:-20px;padding:0 20px 4px;scroll-padding:0 20px;scrollbar-width:none}
+.proof figure{flex:0 0 58%;scroll-snap-align:start}.work a{flex:0 0 78%;scroll-snap-align:start}
+.accs::-webkit-scrollbar,.proof::-webkit-scrollbar,.work::-webkit-scrollbar{display:none}
+.stmt{margin-top:44px;text-align:left}
+.fd{padding-top:40px}.fd>img{width:72px;height:72px}
+.worked b{display:inline-block;margin:4px 12px 0 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero>video{display:none}.rv{opacity:1;transform:none;transition:none}.work video{transition:none}}
+</style>
+</head><body>
+
+<header class="hero">
+  <img src="media/capri-poster.jpg" alt="">
+  <video autoplay muted loop playsinline poster="media/capri-poster.jpg"><source src="media/capri.mp4" type="video/mp4"></video>
+  <div class="hi w">
+    <div class="brand">The Finest Media</div>
+    <div class="when">Dubai — November 2026</div>
+    <h1>Dubai, <em>captured.</em></h1>
+    <p>Capturing the people, moments and atmosphere that make an experience worth remembering.</p>
+    <a class="cta" href="https://thefinestmedia.com" target="_blank" rel="noopener">Discover The Finest Media <span>↗</span></a>
+  </div>
+</header>
+
+<section class="w">
+  <div class="rv">
+    <span class="ey">The network</span>
+    <div class="big">4.8M<small>+</small></div>
+    <div class="bigl">combined Instagram followers across our own lifestyle accounts.</div>
+  </div>
+  <div class="accs rv">
+    <a href="https://www.instagram.com/heritageclass" target="_blank" rel="noopener"><img src="media/ig/heritageclass.jpg" alt=""><b>heritageclass</b><span>1.2M</span></a>
+    <a href="https://www.instagram.com/justlavish" target="_blank" rel="noopener"><img src="media/ig/justlavish.jpg" alt=""><b>justlavish</b><span>1M</span></a>
+    <a href="https://www.instagram.com/clasysociety" target="_blank" rel="noopener"><img src="media/ig/a1.jpg" alt=""><b>clasysociety</b><span>1M</span></a>
+    <a href="https://www.instagram.com/intensevalue" target="_blank" rel="noopener"><img src="media/ig/intensevalue.jpg" alt=""><b>intensevalue</b><span>957K</span></a>
+    <a href="https://www.instagram.com/luxorignite" target="_blank" rel="noopener"><img src="media/ig/luxorignite.jpg" alt=""><b>luxorignite</b><span>658K</span></a>
+  </div>
+  <div class="proof rv">
+    <figure><img src="media/results/r10.jpg" alt="Instagram insights, 30 days" loading="lazy"><figcaption>Own account · 30 days</figcaption></figure>
+    <figure><img src="media/results/r14.jpg" alt="Instagram insights" loading="lazy"><figcaption>Partner account</figcaption></figure>
+    <figure><img src="media/results/r01.jpg" alt="Instagram insights, organic" loading="lazy"><figcaption>Partner account · organic</figcaption></figure>
+    <figure><img src="media/results/fs.jpg" alt="Four Seasons insights" loading="lazy"><figcaption>Four Seasons</figcaption></figure>
+  </div>
+  <p class="worked rv">Worked with <b>Four Seasons</b><b>Jacob &amp; Co.</b><b>Van der Valk</b></p>
+</section>
+
+<section class="w">
+  <div class="rv">
+    <span class="ey">Selected work</span>
+    <h2>Lifestyle reels, <em>not event recaps.</em></h2>
+  </div>
+  <div class="work rv">
+    <a href="https://www.instagram.com/ottorothfusz" target="_blank" rel="noopener"><video muted loop playsinline preload="metadata" poster="media/capri-poster.jpg" src="media/capri.mp4"></video><div class="cap"><b>Capri</b><span>800K views</span></div></a>
+    <a href="https://www.instagram.com/ottorothfusz" target="_blank" rel="noopener"><video muted loop playsinline preload="metadata" poster="media/montecarlo-poster.jpg" src="media/montecarlo.mp4"></video><div class="cap"><b>Monte-Carlo</b><span>Hôtel de Paris</span></div></a>
+    <a href="https://www.instagram.com/ottorothfusz" target="_blank" rel="noopener"><video muted loop playsinline preload="metadata" poster="media/otto/villa-poster.jpg" src="media/otto/villa.mp4"></video><div class="cap"><b>Villa</b><span>163K views</span></div></a>
+    <a href="https://www.instagram.com/ottorothfusz" target="_blank" rel="noopener"><video muted loop playsinline preload="metadata" poster="media/dinner-poster.jpg" src="media/dinner.mp4"></video><div class="cap"><b>Private dinner</b></div></a>
+    <a href="https://www.instagram.com/ottorothfusz" target="_blank" rel="noopener"><video muted loop playsinline preload="metadata" poster="media/champagne-poster.jpg" src="media/champagne.mp4"></video><div class="cap"><b>Evening</b></div></a>
+    <a href="https://www.instagram.com/ottorothfusz" target="_blank" rel="noopener"><video muted loop playsinline preload="metadata" poster="media/paris-poster.jpg" src="media/paris.mp4"></video><div class="cap"><b>Paris</b></div></a>
+  </div>
+</section>
+
+<section class="w" style="padding-top:0">
+  <div class="rv">
+    <span class="ey">For events</span>
+    <h2>Done-for-you reels <em>&amp; trial reels.</em></h2>
+  </div>
+  <div class="vis rv">
+    <div class="ph"><video muted loop playsinline preload="metadata" poster="media/reels/r1.jpg" src="media/reels/r1.mp4"></video></div>
+    <div class="ph"><video muted loop playsinline preload="metadata" poster="media/reels/r2.jpg" src="media/reels/r2.mp4"></video></div>
+    <div class="ph"><video muted loop playsinline preload="metadata" poster="media/reels/r3.jpg" src="media/reels/r3.mp4"></video></div>
+    <div class="ph"><video muted loop playsinline preload="metadata" poster="media/reels/r4.jpg" src="media/reels/r4.mp4"></video></div>
+    <div class="ph"><video muted loop playsinline preload="metadata" poster="media/reels/r5.jpg" src="media/reels/r5.mp4"></video></div>
+  </div>
+</section>
+
+<section class="w" style="padding-top:0">
+  <div class="fd rv">
+    <img src="media/ig/otto.jpg" alt="Otto Rothfusz">
+    <div>
+      <div class="nm">Otto Rothfusz <svg viewBox="0 0 24 24" aria-label="Verified"><path fill="#3897f0" d="M12 1.5l2.6 1.9 3.2-.1 1 3.1 2.6 1.9-1 3.1 1 3.1-2.6 1.9-1 3.1-3.2-.1L12 22.5l-2.6-1.9-3.2.1-1-3.1-2.6-1.9 1-3.1-1-3.1 2.6-1.9 1-3.1 3.2.1z"/><path d="M7.8 12.2l2.9 2.9 5.6-5.8" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <p>Founder of The Finest Media. Social media strategist, building lifestyle audiences on Instagram and YouTube.</p>
+    </div>
+  </div>
+  <div class="links rv">
+    <a class="cta" href="https://www.instagram.com/ottorothfusz" target="_blank" rel="noopener">@ottorothfusz <span>↗</span></a>
+    <a class="cta g" href="https://thefinestmedia.com" target="_blank" rel="noopener">thefinestmedia.com <span>↗</span></a>
+  </div>
+  <footer>The Finest Media · Dubai, November 2026 · Prepared for Zenith Council</footer>
+</section>
+
+<script>
+(function(){
+  var vs=[].slice.call(document.querySelectorAll('video'));
+  function kick(v){v.muted=true;v.defaultMuted=true;v.playsInline=true;v.setAttribute('muted','');v.setAttribute('playsinline','');if(v.paused){var p=v.play();if(p&&p.catch)p.catch(function(){})}}
+  var rv=[].slice.call(document.querySelectorAll('.rv'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)kick(e.target);else e.target.pause()})},{threshold:.2});
+    vs.forEach(function(v){io.observe(v)});
+    var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}})},{threshold:.08});
+    rv.forEach(function(el){ro.observe(el)});
+  }else{vs.forEach(kick);rv.forEach(function(el){el.classList.add('in')})}
+  function all(){vs.forEach(function(v){var r=v.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight&&r.right>0&&r.left<innerWidth)kick(v)})}
+  ['load','touchstart','pointerdown','scroll'].forEach(function(ev){addEventListener(ev,all,{passive:true,once:ev!=='scroll'})});
+  document.querySelectorAll('.work,.vis').forEach(function(r){r.addEventListener('scroll',all,{passive:true})});
+  all();
+})();
+</script>
+</body></html>
